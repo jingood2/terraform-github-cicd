@@ -47,7 +47,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION || 'us-east-1' }}
       
       - name: Run Checkov action
-        uses: bridgecrewio/checkov-action@3854b91536303a096e7693434ef98706a0be82cb # master
+        uses: bridgecrewio/checkov-action@250d5223e585a6e446c967d8864aaf3c524bbfbe # master
         with:
           directory: ${{ inputs.working-directory }}
           quiet: true # optional: display only failed checks
